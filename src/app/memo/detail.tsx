@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { Feather } from "@expo/vector-icons";
 
 import Header from "../../components/Header";
 import CircleButton from "../../components/CircleButton";
@@ -20,7 +21,9 @@ const Detail = (): React.JSX.Element => {
           本文ようなので使い方を間違えると不自然に見えることもあります。
         </Text>
       </ScrollView>
-      <CircleButton style={{ top: 160, bottom: 'auto' }}>+</CircleButton>
+      <CircleButton style={{ top: 160, bottom: 'auto' }}>
+        <Feather name="check" size={40} color="#FFFFFF" />
+      </CircleButton>
     </View>
   );
 }
